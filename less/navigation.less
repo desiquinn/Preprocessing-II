@@ -13,10 +13,23 @@
         display: flex;
         justify-content: space-between;
         width: 40%;
+
+        @media @mobile {
+            width: 100%;
+            margin: 10px auto;
+        }
+
         a {
             text-decoration: none;
             font-size: 1.6rem;
             color: @font-color;
         }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: space-between;
+        text-align: center;
+        padding: 0 10%;
     }
 }

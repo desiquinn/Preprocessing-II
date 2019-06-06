@@ -169,6 +169,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .nav-bar {
   width: 100%;
   height: 100px;
@@ -183,10 +188,24 @@ img {
   justify-content: space-between;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .nav-bar nav {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
 .nav-bar nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+    padding: 0 10%;
+  }
 }
 .footer {
   width: 100%;
@@ -216,12 +235,30 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -235,12 +272,23 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -257,10 +305,21 @@ img {
   background-color: #17A2B8;
   border-radius: 10px;
   color: #FFFFFF;
-  width: 200px;
+  width: 90%;
   height: 40px;
   text-align: center;
   padding: 10px 0;
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
